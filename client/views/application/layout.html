@@ -1,10 +1,11 @@
 <template name="layout">
   <div class="container">
-    <header class="navbar">
-      <div class="navbar-inner">
-        <a class="brand" href="{{pathFor 'postsList1'}}">IAMXed</a>
-      </div>
-    </header>
+<header class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="{{pathFor 'postsList1'}}">{{pageTitle}}</a>
+  </div>
+</header>
+
     <div id="main" class="row-fluid">
       {{> yield}}
     </div>
