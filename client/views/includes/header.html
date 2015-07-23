@@ -1,0 +1,21 @@
+ 
+<template name="header">
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="{{postsList1Path}}">IAMXed</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav navbar-nav"> 
+            <li><a href="{{pathFor 'postSubmit'}}">Submit Post</a></li> 
+        </ul>
+        <ul class="nav pull-right">
+          {{>loginButtons align="right"}}
+        </ul>
+      </div>
+    </div>
+  </header>
+</template>
